@@ -1,0 +1,136 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+#container {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 100px 100px;
+    
+}
+
+.card {
+    text-align: center;
+    width: 50%;
+    height: 40%;
+    background-color: #d8e2dc;
+    color: #264653;
+    position: fixed;
+    left: 50px;
+}
+
+
+
+h1 {
+    color: #333;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+#logSection {
+    height: 100%;
+    overflow: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    /* background-color: #e2ebf0; */
+    background-color: #fff8e6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 30%;
+}
+
+
+.logContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;  
+}
+
+.logTitle {
+    font-size: 18px;  
+    font-weight: bold;  
+    margin-bottom: 10px;
+    margin-top: 10px; 
+    color: #333; 
+}
+
+.separator:not(:first-child) {
+    border-top: 1px solid #ccc;  
+    margin-top: 20px;  
+}
+
+.logMessage {
+    margin-bottom: 5px;
+}
+
+li {
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+ul {
+    padding: 10px;
+}
+
+.list-item-container {
+    display: flex;
+}
+
+
+@media (max-width: 1000px) {
+  
+    .card {
+        width: 50%;
+        height: 35%;
+        background-color: #d8e2dc;
+        color: #264653;
+    }    
+}
+
+@media (max-width: 800px) {
+    #btn-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #btn-container > button {
+        margin-bottom: 10px;
+    }
+
+    .card {
+        width: 50%;
+        height: 50%;
+        background-color: #d8e2dc;
+        color: #264653;
+    }
+    
+    
+}
+
